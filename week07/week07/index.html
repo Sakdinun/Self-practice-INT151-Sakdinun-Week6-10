@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Warm-Up</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
+    .highlight { outline: 2px dashed #999; }
+    button { margin: 0.25rem 0.5rem 0.25rem 0; }
+  </style>
+</head>
+<body>
+  <h1 id="title">Change me</h1>
+  <p id="count">Items: (fill me with a number)</p>
+
+  <ul id="todo">
+    <!-- Notice some hidden text to observe innerText vs textContent -->
+    <li class="item"><b>Hello</b> <span style="display:none">hidden</span> world</li>
+    <li class="item">Practice DOM</li>
+  </ul>
+
+  <div>
+    <button id="add">Add item</button>
+    <button id="toggle">Toggle highlight</button>
+    <button id="show-textcontent">Log textContent</button>
+    <button id="show-innertext">Log innerText</button>
+  </div>
+
+  <script src="./main.js">
+   
+  </script>
+</body>
+</html>
