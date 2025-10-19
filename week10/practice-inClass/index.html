@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style Controller (HTML + CSS only)</title>
+
+  <style>
+    /* ค่าเริ่มต้น */
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --fs: 16px;
+    }
+
+    /* โครงหน้า */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #111;
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+<body>
+    <div>
+        <label>Background Color: </label>
+          <input type="color" id="bgColor"><br><br>
+       
+        <label>Font Color: </label>
+          <input type="color" id="fontColor"><br><br>
+       
+        <label>Font Size: </label>
+        <select id="fontSize">
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="large">Large</option>
+          </select><br><br>
+          
+          <button id="saveBtn">Save</button>
+          <button id="resetBtn">Reset</button>
+          <button id="showBtn">Show</button>
+          <script src="main.js"></script>
+    </div>
+</body>
+</html>
